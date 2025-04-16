@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.softserve.edu"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.softserve.edu"
@@ -36,7 +36,8 @@ android {
 }
 
 dependencies {
-
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation(libs.gson)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
